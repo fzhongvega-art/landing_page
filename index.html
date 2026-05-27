@@ -3,31 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>NEGTH.studio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>NEGTH</title>
 </head>
 <body>
-    <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Producto</a>
-    <a href="#">Contacto</a>
-  </nav>
+<header>
+ <nav>
+  <a href="#" class="logo">logo</a> 
+  <a href="#">Inicio</a> 
+  <a href="#">Producto</a>
+  <a href="#">Contacto</a>
+
+</nav>
 </header>
 <main>
   <section id="hero">
-    <h1>NEGHT</h1>
-    <p>que tu marca MARQUE la diferencia</p>
+    <div id="title">
+        <h1>NEGHT</h1>
+        <p>que tu marca MARQUE la diferencia</p>
+    </div>
     <img src="img/vscd.jpg" alt="">
   </section>
-  <section>
-    <h2>Características</h2>
-    <ul>
-      <li>Característica 1</li>
-      <li>Característica 2</li>
-      <li>Característica 3</li>
-    </ul>
+ <section id="servicios">
+  <h2>Características</h2>
+  <div class="cards">
+    <article class="card">
+      <img src="img/servicios.svg" alt="" width="48" height="48">
+      <h3>servicios </h3>
+      <p>Descripción.</p>
+    </article>
+    <article class="card">
+      <img src="img/servicios.svg" alt="" width="48" height="48">
+      <h3>servicios </h3>
+      <p>Descripción.</p>
+    </article>
+    <article class="card">
+      <img src="img/servicios.svg" alt="" width="48" height="48">
+      <h3>servicios </h3>
+      <p>Descripción.</p>
+    </article>
+  </div>
+</section>
   </section>
-  <article>
+  <article id="preguntas">
     <h2>preguntas frecuentes</h2>
      <ul>
         <li>pregunta</li>
@@ -37,6 +55,16 @@
         <li>pregunta</li>
         <p>respuesta</p>
   </article>
+
+  <section id="galeria">
+  <h2>DISEÑOS</h2>
+  <div class="galeria">
+    <img src="img/img1.jpg" alt="Vista 1 del producto">
+    <img src="img/img1.jpg" alt="Vista 1 del producto">
+    <img src="img/img1.jpg" alt="Vista 1 del producto">
+     <img src="img/img1.jpg" alt="Vista 1 del producto">
+  </div>
+</section>
 </main>
 <section id="contacto">
   <h2>Contáctanos</h2>
@@ -51,7 +79,7 @@
     <textarea id="mensaje" placeholder="Escribe aqui un mensaje..."></textarea>
 
       <label for="optionsvarias">Motivo del contacto:</label>
-    <select name="optionsvarias" id="options">
+    <select name="optionsvarias" id="optionsvarias">
         <option value="consulta">Consulta</option>
         <option value="Reclamo"> Reclamo</option>
         <option value="sugerencia">sugerencia</option>
@@ -63,7 +91,8 @@
 
 </section>
 <footer>
-  <p>Contacto: NEGHTstudio.com</p>
+  <p id="contacto">Contacto: NEGHTstudio.com</p>
+  <section id="links">
   <a href="#" aria-label="Síguenos en Facebook">
     <img src="img/facebook.svg" alt="" width="32" height="32">
   </a>
@@ -76,6 +105,7 @@
   <a href="#" aria-label="Numero de whatsapp">
     <img src="img/whatsapp.svg" alt="" width="32" height="32">
   </a>
+  </section>
 </footer>
 </body>
 </html>
